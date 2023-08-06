@@ -2,7 +2,7 @@
 using System.Web.Http;
 using System.Net.Http;
 
-namespace WebApplication1
+namespace BlafxCall
 {
     public static class WebApiConfig
     {

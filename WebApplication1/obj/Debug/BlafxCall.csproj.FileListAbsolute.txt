@@ -42,7 +42,6 @@ C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplica
 C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\bin\System.Net.Http.Formatting.xml
 C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\bin\System.Web.Http.xml
 C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\bin\System.Web.Http.WebHost.xml
-C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\obj\Debug\BlafxCall.csprojAssemblyReference.cache
 C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\obj\Debug\BlafxCall.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\obj\Debug\BlafxCall.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\GIT_Integrate_Solution\GIT_Integrate_Solution\WebApplication1\obj\Debug\BlafxCall.dll

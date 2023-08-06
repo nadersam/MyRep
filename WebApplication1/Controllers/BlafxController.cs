@@ -8,7 +8,7 @@ using System.Net.Mail;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace WebApplication1.Controllers
+namespace BlafxCall.Controllers
 {
     public class BlafxController : ApiController
     {
@@ -65,8 +65,7 @@ namespace WebApplication1.Controllers
                 resp = BlafxServiceCall("https://crm.blafx.com/crm/followConsumer/getOrder?mt5Login=1001015&orderType=1");
                 JObject jArray2 = JsonConvert.DeserializeObject<JObject>(resp);
                 if (jArray2.Count > 1)
-                    //opentime = jArray2("rows")(0)("openTime").ToString();
-                    opentime = jArray2["rows"]["openTime"].Value<string>();
+                    opentime = jArray2["rows"][0]["openTime"].Value<string>();
                 OpenDate = UnixToDateTime(opentime);
                 if ((OpenDate.Day == DateTime.Now.Day & OpenDate.Month == DateTime.Now.Month) & LastArk2Trade != opentime)
                 {
@@ -80,8 +79,7 @@ namespace WebApplication1.Controllers
                 resp = BlafxServiceCall("https://crm.blafx.com/crm/followConsumer/getOrder?mt5Login=5506597&orderType=1");
                 JObject jArray = JsonConvert.DeserializeObject<JObject>(resp);
                 if (jArray.Count > 1)
-                    //opentime = jArray("rows")(0)("openTime").ToString();
-                    opentime = jArray["rows"]["openTime"].Value<string>();
+                    opentime = jArray["rows"][0]["openTime"].Value<string>();
                 OpenDate = UnixToDateTime(opentime);
                 if ((OpenDate.Day == DateTime.Now.Day & OpenDate.Month == DateTime.Now.Month) & LastArk4Trade != opentime)
                 {
@@ -95,8 +93,7 @@ namespace WebApplication1.Controllers
                 resp = BlafxServiceCall("https://crm.blafx.com/crm/followConsumer/getOrder?mt5Login=5501835&orderType=1");
                 JObject jArray1 = JsonConvert.DeserializeObject<JObject>(resp);
                 if (jArray1.Count > 1)
-                    //opentime = jArray1("rows")(0)("openTime").ToString();
-                    opentime = jArray1["rows"]["openTime"].Value<string>();
+                    opentime = jArray1["rows"][0]["openTime"].Value<string>();
                 OpenDate = UnixToDateTime(opentime);
                 if ((OpenDate.Day == DateTime.Now.Day & OpenDate.Month == DateTime.Now.Month) & LastArk3Trade != opentime)
                 {
