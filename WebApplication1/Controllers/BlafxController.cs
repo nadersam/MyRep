@@ -20,6 +20,8 @@ namespace BlafxCall.Controllers
             try
             {
                 HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(url);
+                webRequest.Headers.Add("Authorization", "Bearer19ea7557-3820-442b-bb48-b1134445175f");
+                webRequest.Headers.Add("Ocp-Apim-Subscription-Key", "19ea7557-3820-442b-bb48-b1134445175f");
                 webRequest.ContentType = "text/xml;charset=\"utf-8\"";
                 webRequest.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";
                 webRequest.Method = "GET";
